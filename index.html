@@ -1,134 +1,167 @@
 <!DOCTYPE html>
 <html lang="uz">
-
 <head>
     <meta charset="UTF-8">
-    <title>Nadia Education Dashboard</title>
+    <title>Oripio Dashboard Full UI</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-    <div class="app-shell">
-        <aside class="sidebar-narrow">
-            <div class="side-logo"><i class="fas fa-book-open"></i></div>
-            <nav class="side-nav">
-                <div class="nav-btn active"><i class="fas fa-th-large"></i></div>
-                <div class="nav-btn"><i class="far fa-calendar-alt"></i></div>
-                <div class="nav-btn"><i class="far fa-envelope"></i></div>
-                <div class="nav-btn"><i class="far fa-comment-dots"></i></div>
-                <div class="nav-btn"><i class="fas fa-wallet"></i></div>
-                <div class="nav-btn settings"><i class="fas fa-cog"></i></div>
-            </nav>
-        </aside>
-        <main class="main-viewport">
-            <header class="main-header">
-                <h1>Welcome, Nadia!</h1>
-                <div class="header-tools">
-                    <i class="fas fa-search"></i>
-                    <i class="far fa-bell"></i>
-                    <div class="user-pill">
-                        <img src="https://i.pravatar.cc/100?u=nadia" alt="Nadia">
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-box"><i class="fas fa-leaf"></i></div>
+                <span>Oripio</span>
+            </div>
+
+            <div class="nav-container">
+                <div class="nav-group">
+                    <p class="nav-label">MAIN MENU</p>
+                    <div class="nav-link active"><i class="fas fa-th-large"></i> Dashboard</div>
+                    <div class="nav-link"><i class="fas fa-chart-line"></i> Analytics <span class="badge">20</span></div>
+                    <div class="nav-link"><i class="fas fa-exchange-alt"></i> Transactions</div>
+                    <div class="nav-link"><i class="fas fa-file-invoice"></i> Invoices</div>
                 </div>
+
+                <div class="nav-group">
+                    <p class="nav-label">FEATURES</p>
+                    <div class="nav-link"><i class="fas fa-redo"></i> Recurring <span class="badge">16</span></div>
+                    <div class="nav-link"><i class="fas fa-users"></i> Subscriptions</div>
+                    <div class="nav-link"><i class="fas fa-comment-dots"></i> Feedback</div>
+                </div>
+ <div class="nav-group">
+                    <p class="nav-label">GENERAL</p>
+                    <div class="nav-link"><i class="fas fa-cog"></i> Settings</div>
+                    <div class="nav-item"><i class="fas fa-headset"></i> Help Desk</div>
+                    <div class="nav-link logout"><i class="fas fa-sign-out-alt"></i> Log out</div>
+                </div>
+            </div>
+
+            <div class="pro-banner">
+                <div class="pro-text">
+                    <strong>Upgrade Pro! 🚀</strong>
+                    <p>Higher productivity with better organization</p>
+                </div>
+                <button class="pro-btn"><i class="fas fa-crown"></i> Upgrade</button>
+            </div>
+        </aside>
+
+        <main class="main">
+            <header class="top-bar">
+                <div class="search-wrap">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search">
+                    <span class="cmd-key">⌘ K</span>
+                </div>
+                <div class="header-actions">
+                    <div class="action-icons">
+                        <i class="far fa-question-circle"></i>
+                        <i class="far fa-envelope"></i>
+                        <i class="far fa-bell"></i>
+                    </div>
+                    <div class="date-chip"><i class="far fa-calendar"></i> Sun, 12 June 2026</div>
+                    <button class="btn-black"><i class="fas fa-upload"></i> Export</button>
+                    <div class="user-info">
+                        <img src="https://i.pravatar.cc/100?u=sajib" alt="user">
+                        <i class="fas fa-chevron-down"></i>
+                    </div> </div>
             </header>
 
+            <div class="welcome-hero">
+                <h1>Welcome back, Sajibur Rahman</h1>
+                <p>Monitor and control what happens with your money today for financial health.</p>
+            </div>
 
-            <div class="scrollable-content">
-                <section class="students-section">
-                    <div class="sec-head">
-                        <h3>My students</h3> <a href="#">View all</a>
-                    </div>
-                    <div class="student-cards">
-                        <div class="s-card">
-                            <img src="https://i.pravatar.cc/50?u=1">
-                            <div class="s-info"><strong>Jane Cooper</strong>
-                                <p>2464 Royal Ln. Mesa, New Jersey</p>
-                            </div>
+            <div class="grid-layout">
+                <div class="col-1">
+                    <div class="card card-balance">
+                        <div class="card-top">
+                            <span><i class="fas fa-briefcase"></i> Account Balance</span>
+                            <div class="dropdown">USD <i class="fas fa-chevron-down"></i></div>
                         </div>
-                        <div class="s-card">
-                            <img src="https://i.pravatar.cc/50?u=2">
-                            <div class="s-info"><strong>Freida Varnes</strong>
-                                <p>4140 Parker Rd. Allentown, New Mexico</p>
-                            </div>
-                        </div>
-                        <div class="s-card">
-                            <img src="https://i.pravatar.cc/50?u=3">
-                            <div class="s-info"><strong>Cyndy Lillibridge</strong>
-                                <p>3891 Ranchview Dr. Richardson, California</p>
-                            </div>
+                        <h2 class="amount">$35,340.89</h2>
+                        <span class="stat positive">+3.2% <span>from last month</span></span>
+                        <div class="action-row">
+                            <button class="btn-green">Send Money</button>
+                            <button class="btn-outline">Request Money</button>
                         </div>
                     </div>
-                </section>
-
-
-                <div class="dashboard-grid">
-                    <div class="grid-col">
-                        <div class="card card-white">
-                            <div class="card-head">
-                                <h3>My classes</h3>
-                                <div class="card-icons"><i class="fas fa-search"></i> <i class="fas fa-sliders-h"></i>
-                                </div>
+<div class="wallet-wrap">
+                        <div class="wallet-head">
+                            <h3>My Wallet</h3>
+                            <span class="add-link">+ Add New</span>
+                        </div>
+                        <div class="wallet-grid">
+                            <div class="w-item active">
+                                <img src="https://flagpedia.net/data/flags/h80/us.png" alt="us">
+                                <div class="w-info">USD <br> <strong>$22,678.00</strong><br><small>Active</small></div>
                             </div>
-                            <div class="class-item">
-                                <div class="class-meta"><strong>Mathematics</strong> <span><i
-                                            class="far fa-calendar"></i> 5/19/12</span></div>
-                                <p class="class-desc">Natural numbers and scales. 1. Natural numbers. 2. Segment. The
-                                    length of the segment. Triangle...</p>
-                                <div class="class-footer"><img src="https://i.pravatar.cc/30?u=a"> <span>Rochel
-                                        Foose</span></div>
+                            <div class="w-item">
+                                <img src="https://flagpedia.net/data/flags/h80/eu.png" alt="eu">
+                                <div class="w-info">EUR <br> <strong>€18,345.00</strong><br><small>Active</small></div>
                             </div>
-                            <div class="class-item">
-                                <div class="class-meta"><strong>Physics</strong> <span><i class="far fa-calendar"></i>
-                                        2/11/12</span></div>
-                                <p class="class-desc">I need to revise Mechanics and Kinematics. Conservation laws...
-                                </p>
-                                <div class="class-footer"><img src="https://i.pravatar.cc/30?u=b"> <span>Maryland
-                                        Winkles</span></div>
+                            <div class="w-item">
+                                <img src="https://flagpedia.net/data/flags/h80/bd.png" alt="bd">
+                                <div class="w-info">BDT <br> <strong>৳1,22,678.00</strong><br><small>Active</small></div>
+                            </div>
+                            <div class="w-item">
+                                <img src="https://flagpedia.net/data/flags/h80/gb.png" alt="gb">
+                                <div class="w-info">GBP <br> <strong>£15,000.00</strong><br><small>Inactive</small></div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="grid-col">
-                        <div class="card card-white">
-                            <div class="card-head">
-                                <h3>Jobs</h3>
-                                <div class="card-icons"><i class="fas fa-search"></i> <i class="fas fa-sliders-h"></i>
-                                </div>
-                            </div>
-                            <div class="job-promo">
-                                <img src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?w=400"
-                                    class="job-img">
-                                <h4>Need a math teacher for my child</h4>
-                                <p>Need to explain concepts such as Quadratic equations and Vieta's theorem.</p>
-                                <div class="class-footer"><img src="https://i.pravatar.cc/30?u=c"> <span>Leif
-                                        Floyd</span> <button class="btn-new">New</button></div>
-                            </div>
+                 <div class="col-2">
+                    <div class="stats-row">
+                        <div class="card mini-card">
+                            <div class="card-top"><span>Total Expenses</span> <i class="fas fa-ellipsis-h"></i></div>
+                            <h3 class="amount">$9,845.20</h3>
+                            <span class="stat negative">-2.1%</span>
+                        </div>
+                        <div class="card mini-card">
+                            <div class="card-top"><span>Total Savings</span> <i class="fas fa-ellipsis-h"></i></div>
+                            <h3 class="amount">$18,420.75</h3>
+                            <span class="stat positive">+4.5%</span>
                         </div>
                     </div>
-
-                    <div class="grid-col">
-                        <div class="card card-white mini-card">
-                            <div class="card-head">
-                                <h3>Account</h3> <a href="#">Edit</a>
-                            </div>
-                            <h2 class="price">$1234.00</h2>
-                            <p class="visa">Visa 1234</p>
+<div class="card chart-card">
+                        <div class="card-top">
+                            <h3>Overview</h3>
+                            <div class="chart-info"><span class="earn-dot">Earnings</span> <div class="period">This Year <i class="fas fa-chevron-down"></i></div></div>
                         </div>
+                        <div class="chart-bars">
+                            <div class="bar" style="height: 30%;"><span>Jan</span></div>
+                            <div class="bar" style="height: 50%;"><span>Feb</span></div>
+                            <div class="bar highlight" style="height: 90%;">
+                                <div class="tooltip">Earnings $84,849.93</div>
+                                <span>Aug</span>
+                            </div>
+                            <div class="bar" style="height: 40%;"><span>Dec</span></div>
+                        </div>
+                    </div>
+	
 
-                        <div class="card card-white calendar-card">
-                            <div class="card-head">
-                                <h3>Calendar</h3> <i class="fas fa-ellipsis-v"></i>
-                            </div>
-                            <div class="cal-header">November 2021</div>
-                            <div class="cal-grid">
-                                <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
-                                <span class="old">28</span><span class="old">29</span><span
-                                    class="old">30</span><span>1</span><span>2</span><span>3</span><span>4</span>
-                                <span>5</span><span>6</span><span
-                                    class="today">7</span><span>8</span><span>9</span><span>10</span><span>11</span>
-                            </div>
+                    <div class="card table-card">
+                        <div class="card-top"><h3>Recent Transaction</h3> <span class="filter">Filter <i class="fas fa-sliders-h"></i></span></div>
+                        <table>
+                            <tr>
+                                <td><i class="fab fa-apple"></i> Mobile App Purchase</td>
+                                <td>Wed, 12 Jun 2026</td>
+                                <td><strong>$806.50</strong></td>
+                                <td class="status">Success</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card savings-card">
+                        <div class="card-top"><h3>My Savings Plan</h3> <i class="fas fa-ellipsis-h"></i></div>
+                        <div class="save-item">
+                            <p>Investment Goal</p>
+                            <div class="progress-info"><span>$15,600/$25,000</span> <strong>62%</strong></div>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 62%;"></div></div>
                         </div>
                     </div>
                 </div>
@@ -136,5 +169,16 @@
         </main>
     </div>
 </body>
-
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
