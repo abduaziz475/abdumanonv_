@@ -1,17 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Nadia Education Dashboard</title>
+    <link rel="stylesheet" href="stlye.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <h1>salom
-    </h1>
-    
+    <div class="app-shell">
+        <aside class="sidebar-narrow">
+            <div class="side-logo"><i class="fas fa-book-open"></i></div>
+            <nav class="side-nav">
+                <div class="nav-btn active"><i class="fas fa-th-large"></i></div>
+                <div class="nav-btn"><i class="far fa-calendar-alt"></i></div>
+                <div class="nav-btn"><i class="far fa-envelope"></i></div>
+                <div class="nav-btn"><i class="far fa-comment-dots"></i></div>
+                <div class="nav-btn"><i class="fas fa-wallet"></i></div>
+                <div class="nav-btn settings"><i class="fas fa-cog"></i></div>
+            </nav>
+        </aside>
+        <main class="main-viewport">
+            <header class="main-header">
+                <h1>Welcome, Nadia!</h1>
+                <div class="header-tools">
+                    <i class="fas fa-search"></i>
+                    <i class="far fa-bell"></i>
+                    <div class="user-pill">
+                        <img src="https://i.pravatar.cc/100?u=nadia" alt="Nadia">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </header>
+
+
+            <div class="scrollable-content">
+                <section class="students-section">
+                    <div class="sec-head">
+                        <h3>My students</h3> <a href="#">View all</a>
+                    </div>
+                    <div class="student-cards">
+                        <div class="s-card">
+                            <img src="https://i.pravatar.cc/50?u=1">
+                            <div class="s-info"><strong>Jane Cooper</strong>
+                                <p>2464 Royal Ln. Mesa, New Jersey</p>
+                            </div>
+                        </div>
+                        <div class="s-card">
+                            <img src="https://i.pravatar.cc/50?u=2">
+                            <div class="s-info"><strong>Freida Varnes</strong>
+                                <p>4140 Parker Rd. Allentown, New Mexico</p>
+                            </div>
+                        </div>
+                        <div class="s-card">
+                            <img src="https://i.pravatar.cc/50?u=3">
+                            <div class="s-info"><strong>Cyndy Lillibridge</strong>
+                                <p>3891 Ranchview Dr. Richardson, California</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <div class="dashboard-grid">
+                    <div class="grid-col">
+                        <div class="card card-white">
+                            <div class="card-head">
+                                <h3>My classes</h3>
+                                <div class="card-icons"><i class="fas fa-search"></i> <i class="fas fa-sliders-h"></i>
+                                </div>
+                            </div>
+                            <div class="class-item">
+                                <div class="class-meta"><strong>Mathematics</strong> <span><i
+                                            class="far fa-calendar"></i> 5/19/12</span></div>
+                                <p class="class-desc">Natural numbers and scales. 1. Natural numbers. 2. Segment. The
+                                    length of the segment. Triangle...</p>
+                                <div class="class-footer"><img src="https://i.pravatar.cc/30?u=a"> <span>Rochel
+                                        Foose</span></div>
+                            </div>
+                            <div class="class-item">
+                                <div class="class-meta"><strong>Physics</strong> <span><i class="far fa-calendar"></i>
+                                        2/11/12</span></div>
+                                <p class="class-desc">I need to revise Mechanics and Kinematics. Conservation laws...
+                                </p>
+                                <div class="class-footer"><img src="https://i.pravatar.cc/30?u=b"> <span>Maryland
+                                        Winkles</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-col">
+                        <div class="card card-white">
+                            <div class="card-head">
+                                <h3>Jobs</h3>
+                                <div class="card-icons"><i class="fas fa-search"></i> <i class="fas fa-sliders-h"></i>
+                                </div>
+                            </div>
+                            <div class="job-promo">
+                                <img src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?w=400"
+                                    class="job-img">
+                                <h4>Need a math teacher for my child</h4>
+                                <p>Need to explain concepts such as Quadratic equations and Vieta's theorem.</p>
+                                <div class="class-footer"><img src="https://i.pravatar.cc/30?u=c"> <span>Leif
+                                        Floyd</span> <button class="btn-new">New</button></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-col">
+                        <div class="card card-white mini-card">
+                            <div class="card-head">
+                                <h3>Account</h3> <a href="#">Edit</a>
+                            </div>
+                            <h2 class="price">$1234.00</h2>
+                            <p class="visa">Visa 1234</p>
+                        </div>
+
+                        <div class="card card-white calendar-card">
+                            <div class="card-head">
+                                <h3>Calendar</h3> <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                            <div class="cal-header">November 2021</div>
+                            <div class="cal-grid">
+                                <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                                <span class="old">28</span><span class="old">29</span><span
+                                    class="old">30</span><span>1</span><span>2</span><span>3</span><span>4</span>
+                                <span>5</span><span>6</span><span
+                                    class="today">7</span><span>8</span><span>9</span><span>10</span><span>11</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 
 </html>
